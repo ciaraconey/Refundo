@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Refundo</string>
+    <string name="msg"><b> Queen\'s Online</b> </string>
+    <string name="login"> <b> Please login below:</b> </string>
+    <string name="btn">Login </string>
+    <string name="viewbtn">View Returns List </string>
+    <string name="trackbtn">Track Current Refunds  </string>
+    <string name="profilebtn">My Account </string>
+    <string name="newbtn">Add New Parcel </string>
+    <string name="scantext"><b>Scan your new parcel here:</b> </string>
+    <string name="scan">Scan QR Code</string>
+    <string name="btn2">Cancel </string>
+    <string name="or">OR</string>
+    <string name="addnew"> <b> Enter your parcel details below:</b></string>
+    <string name="enter"><b> Reset your password </b></string>
+    <string name="forgot">  <u>Forgot password? </u> </string>
+    <string name="password">  <b>Show Password</b> </string>
+    <string name="myreturns">  <b>My Returns</b> </string>
+    <string name="remember">  <b>Remember Me</b> </string>
+    <string name="attempts">  <b>Attempts Left:</b> </string>
+    <string name="reset">  <b>Enter your email address below: </b> </string>
+    <string name="email">  Email Address </string>
+    <string name="confirm">  Confirm email Address </string>
+    <string name="welcome"> <b>Welcome to Refundo</b>  </string>
+    <string name="select">  Please select an option from the menu:</string>
+    <string name="submit"> Submit </string>
+    <string name="instructions"> Please follow the instructions that have been sent to your email address to reset your password. </string>
+    <string name="asos"> ASOS </string>
+    <string name="newlook"> New Look </string>
+    <string name="topshop"> Topshop </string>
+    <string name="checklist"> Please check off completed returns below: </string>
+    <string name="refundhistory"> View Refund History </string>
+    <string name="myaccount"> My Account </string>
+    <string name="changepassword"> Change Your Password </string>
+    <string name="confirmpassword"> Confirm Password </string>
+    <string name="register"> Please enter your details to register: </string>
+    <string name="fname"> First Name  </string>
+    <string name="sname"> Last Name </string>
+    <string name="uname"> Username </string>
+    <string name="code"> Scan Result </string>
+    <string name="signup"> Register </string>
+    <string name="regnow"> Don\'t have an account? Sign up now! </string>
+
+</resources>

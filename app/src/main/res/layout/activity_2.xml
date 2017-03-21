@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter"
+        android:id="@+id/textView1"
+        android:typeface="normal"
+        android:textColor="@color/red"
+        android:textSize="28sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/textView1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView1"
+            android:text="@string/reset"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:padding="@dimen/activity_vertical_margin"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textColor="@color/navy"
+            android:layout_below="@+id/textView2"
+            android:id="@+id/EditText2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/navy"
+            android:hint="@string/confirm"
+            android:id="@+id/EditText3"
+            android:layout_below="@+id/EditText2"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EditText3"
+            android:layout_gravity="center"
+            android:textColor="@color/red"
+            android:text="@string/submit"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/instructions"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
