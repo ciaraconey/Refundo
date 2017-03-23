@@ -41,4 +41,6 @@
     <string name="signup"> Register </string>
     <string name="regnow"> Don\'t have an account? Sign up now! </string>
 
+    <string name="settingsTitle"> Settings </string>
+    <string name="orderHistory"> View your Order History </string>
 </resources>

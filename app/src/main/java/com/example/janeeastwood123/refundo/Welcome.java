@@ -9,18 +9,24 @@ import android.view.Menu;
 import android.app.Activity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class Welcome extends MainActivity {
 
     Button b1, b4, b2;
+    ImageView img;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome);
 
+        String userName = getIntent().getStringExtra("USERNAME");
+
         b1 = (Button) findViewById(R.id.button1);
         b4 = (Button) findViewById(R.id.button4);
         b2 = (Button) findViewById(R.id.button2);
+        img = (ImageView) findViewById(R.id.logoutImg);
 
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +60,21 @@ public class Welcome extends MainActivity {
 
             }
         });
+
+        img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                // intent and start activity used to advance the page, uri used to redirect to webpage
+                Intent login = new Intent(getApplicationContext(), MainActivity.class);
+                login.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                Toast.makeText(getApplicationContext(), "Signed out", Toast.LENGTH_SHORT).show();
+                startActivity(login);
+                finish();
+
+            }
+        });
+
     }
     }
 

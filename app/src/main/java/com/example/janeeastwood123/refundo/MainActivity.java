@@ -65,6 +65,7 @@ public class MainActivity extends Activity {
 
                     // intent and start activity used to advance the page, uri used to redirect to webpage
                     Intent welcome = new Intent(MainActivity.this, Welcome.class);
+                    welcome.putExtra("USERNAME", userName);
                     startActivity(welcome);
 
                 } else {

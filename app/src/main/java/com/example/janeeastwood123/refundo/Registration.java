@@ -60,6 +60,12 @@ public class Registration extends MainActivity {
                         Toast.makeText(getApplicationContext(), "Password does not match!", Toast.LENGTH_LONG).show();
                         return;
                     }
+
+                    else if(!isValidPassword(password))
+                    {
+                        Toast.makeText(getApplicationContext(), "Password must be at least 6 characters in length", Toast.LENGTH_LONG).show();
+                        return;
+                    }
                     else
                     {
                         // Save the Data in Database
@@ -71,6 +77,17 @@ public class Registration extends MainActivity {
                 }
             });
         }
+
+
+    // validating password with retype password
+    private boolean isValidPassword(String password) {
+        if (password.length() > 6) {
+            return true;
+        }
+        return false;
+    }
+
+
         @Override
         protected void onDestroy() {
             // TODO Auto-generated method stub

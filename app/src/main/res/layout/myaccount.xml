@@ -14,26 +14,7 @@ android:orientation="vertical"
 tools:context="com.example.janeeastwood123.refundo.Welcome">
 
 
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="150dp"
-    android:id="@+id/lin1">
-
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="122dp"
-        android:id="@+id/img"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/refundo"/>
-
-
-</LinearLayout>
-
-
-<TextView
-
+    <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_centerHorizontal="true"
@@ -44,45 +25,67 @@ tools:context="com.example.janeeastwood123.refundo.Welcome">
     android:id="@+id/welcome1"
     android:layout_below="@id/lin1"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:id="@+id/linear2"
+        android:layout_below="@+id/welcome1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="62dp">
 
-<TextView
-
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:paddingTop="10dp"
-    android:layout_centerHorizontal="true"
-    android:text="@string/select"
-    android:typeface="normal"
-    android:textSize="15sp"
-    android:textColor="@color/navy"
-    android:id="@+id/select"
-    android:layout_below="@id/welcome1"/>
-
-
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:paddingTop="10dp"
-    android:id="@+id/linear2"
-    android:layout_below="@+id/select">
-
-    <Button
+        <Button
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="@string/changepassword"
         android:textColor="@color/navy"
         android:backgroundTint="@color/green"
         android:id="@+id/button2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:id="@+id/linear3"
+        android:layout_below="@+id/linear2"
+        android:layout_alignParentStart="true">
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/orderHistory"
+                android:textColor="@color/navy"
+                android:backgroundTint="@color/green"
+                android:id="@+id/button3"
+                android:layout_below="@+id/button2"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/lin1"
+        android:layout_below="@+id/logoutImg"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp">
 
 
-</LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:id="@+id/img"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/refundo"/>
+    </LinearLayout>
 
-
-
-
-
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:src="@drawable/logout"
+        android:id="@+id/logoutImg"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/welcome1" />
 </RelativeLayout>
 
 
